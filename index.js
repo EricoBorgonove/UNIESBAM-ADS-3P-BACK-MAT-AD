@@ -1,12 +1,13 @@
+require ('dotenv').config();
 const express = require('express');
 const app = express();
-const PORT = 3001
+
 
 app.get ('/saude', (req, res) => {
     res.status(201).send('Aplicação Saudável !!!')
 });
 
 // sempre será o ultimo
-app.listen(PORT, () => {
-    console.log (`App Rodando na porta ${PORT}`)
+app.listen(process.env.PORT, () => {
+    console.log (`App Rodando na porta ${process.env.PORT}`)
 });

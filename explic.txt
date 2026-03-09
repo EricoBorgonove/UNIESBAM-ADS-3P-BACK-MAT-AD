@@ -1,0 +1,11 @@
+Variável: mantém informações durante um espaço de tempo
+
+- indentificador - nome 
+- tipo de dado 
+- escopo - "onde ela existe"
+-  valor 
+
+JS
+var - escopo global - não se deve usar
+let - escopo de bloco
+const -  escopo de bloco, com constância
