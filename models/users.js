@@ -48,6 +48,11 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'A senha deve ter pelo menos 6 caracteres'
         }
       }
+      // validate {
+      //    is:{
+      //       args: ^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=(?:.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]){2,}).{10,}$ ,
+      //.      msg: 'A senha não segue o padrão'
+      // }
     },
     tipo_usuario: {
       type: DataTypes.ENUM('admin', 'user', 'dev'),
